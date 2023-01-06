@@ -38,7 +38,7 @@ public class PostUserTask implements Task {
                 Post.to(endPoint).with(
                         requestSpecification -> requestSpecification
                                 .contentType(ContentType.JSON)
-                                .body(user)
+                                .body(user).log().all()
                 )
         );
     }
