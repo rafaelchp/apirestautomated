@@ -12,9 +12,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import questions.GetUserQuestion;
+import questions.user.GetUserQuestion;
 import questions.ResponseCode;
-import tasks.GetUser;
+import tasks.user.GetUser;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;

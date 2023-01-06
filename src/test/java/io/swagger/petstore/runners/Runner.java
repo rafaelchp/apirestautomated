@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         plugin = { "pretty" },
         glue = "io.swagger.petstore.stepDefinitions",
-        tags = "@PostUser",
+        tags = "@PostOrder",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 
 )

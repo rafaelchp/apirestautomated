@@ -1,4 +1,4 @@
-package questions;
+package questions.user;
 /*
  * @(#) PostUserQuestion.java 1.0
  *

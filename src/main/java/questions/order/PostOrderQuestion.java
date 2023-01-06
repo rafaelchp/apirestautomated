@@ -1,11 +1,11 @@
-package questions;
+package questions.order;
 /*
- * @(#) GetUser.java 1.0
+ * @(#) PostOrderQuestion.java 1.0
  *
  * Copyright 2022 ATH, Inc. Todos los derechos reservados.
  */
 
-import models.users.UserDataModel;
+import models.orders.SendDataOrderModel;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
@@ -17,9 +17,9 @@ import net.serenitybdd.screenplay.Question;
  * @autor Rafael Chica
  * @Fecha: --o--
  */
-public class GetUserQuestion implements Question {
+public class PostOrderQuestion implements Question<SendDataOrderModel> {
     @Override
-    public UserDataModel answeredBy(Actor actor) {
-        return SerenityRest.lastResponse().as(UserDataModel.class);
+    public SendDataOrderModel answeredBy(Actor actor) {
+        return SerenityRest.lastResponse().as(SendDataOrderModel.class);
     }
 }

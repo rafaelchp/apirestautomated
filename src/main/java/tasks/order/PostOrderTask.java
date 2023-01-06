@@ -1,6 +1,6 @@
-package tasks;
+package tasks.order;
 /*
- * @(#) PostUser.java 1.0
+ * @(#) PostOrderTask.java 1.0
  *
  * Copyright 2022 ATH, Inc. Todos los derechos reservados.
  */
@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Post;
+import tasks.user.PostUserTask;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -20,25 +21,27 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
  * @autor Rafael Chica
  * @Fecha: --o--
  */
-public class PostUserTask implements Task {
-    private final Object user;
+public class PostOrderTask implements Task {
+
+    private final Object order;
     private final String endPoint;
 
-    public PostUserTask(Object user, String endPoint) {
-        this.user = user;
+    public PostOrderTask(Object order, String endPoint) {
+        this.order = order;
         this.endPoint = endPoint;
     }
 
-    public static Performable fromUser(Object user, String endPoint){
-        return instrumented(PostUserTask.class, user, endPoint);
+    public static Performable fromOrder(Object order, String endPoint){
+        return instrumented(PostUserTask.class, order, endPoint);
     }
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Post.to(endPoint).with(
                         requestSpecification -> requestSpecification
                                 .contentType(ContentType.JSON)
-                                .body(user)
+                                .body(order)
                 )
         );
     }

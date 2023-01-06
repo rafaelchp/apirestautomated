@@ -1,4 +1,4 @@
-package questions;
+package questions.user;
 /*
  * @(#) ResponseObjectUser.java 1.0
  *
@@ -16,7 +16,7 @@ import net.serenitybdd.screenplay.Question;
  * @autor Rafael Chica
  * @Fecha: --o--
  */
-public class ResponseObjectUser implements Question {
+public class ObjectUser implements Question {
     private final String username;
     private final String firstName;
     private final String lastName;
@@ -24,7 +24,7 @@ public class ResponseObjectUser implements Question {
     private final String password;
     private final String phone;
 
-    public ResponseObjectUser(String username, String firstName, String lastName, String email, String password, String phone) {
+    public ObjectUser(String username, String firstName, String lastName, String email, String password, String phone) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;

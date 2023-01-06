@@ -1,4 +1,4 @@
-package tasks;
+package tasks.user;
 /*
  * @(#) GetUser.java 1.0
  *
