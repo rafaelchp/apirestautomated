@@ -15,7 +15,7 @@ import questions.order.ObjectOrder;
 import questions.order.PostOrderQuestion;
 import tasks.order.PostOrderTask;
 
-import static contants.Contants.URL_Base;
+import static constants.Constants.URL_Base;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 

@@ -14,7 +14,7 @@ import questions.user.PostUserQuestion;
 import questions.user.ObjectUser;
 import tasks.user.PostUserTask;
 
-import static contants.Contants.URL_Base;
+import static constants.Constants.URL_Base;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 

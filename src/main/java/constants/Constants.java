@@ -1,4 +1,4 @@
-package contants;
+package constants;
 /*
  * @(#) Contants.java 1.0
  *
@@ -12,6 +12,6 @@ package contants;
  * @autor Rafael Chica
  * @Fecha: --o--
  */
-public class Contants {
+public class Constants {
     public  static String URL_Base="https://petstore.swagger.io/v2";
 }
