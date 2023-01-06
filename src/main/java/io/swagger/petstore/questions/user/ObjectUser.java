@@ -1,11 +1,11 @@
-package questions.user;
+package io.swagger.petstore.questions.user;
 /*
  * @(#) ResponseObjectUser.java 1.0
  *
  * Copyright 2022 ATH, Inc. Todos los derechos reservados.
  */
 
-import models.users.UserDataModel;
+import io.swagger.petstore.models.users.UserDataModel;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 

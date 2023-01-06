@@ -7,14 +7,14 @@ package io.swagger.petstore.stepDefinitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import models.users.UserDataModel;
+import io.swagger.petstore.models.users.UserDataModel;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
-import questions.user.PostUserQuestion;
-import questions.user.ObjectUser;
-import tasks.user.PostUserTask;
+import io.swagger.petstore.questions.user.PostUserQuestion;
+import io.swagger.petstore.questions.user.ObjectUser;
+import io.swagger.petstore.tasks.user.PostUserTask;
 
-import static constants.Constants.URL_Base;
+import static io.swagger.petstore.constants.Constants.URL_Base;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 

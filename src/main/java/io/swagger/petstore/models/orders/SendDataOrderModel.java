@@ -1,6 +1,6 @@
-package models.users;
+package io.swagger.petstore.models.orders;
 /*
- * @(#) GetUserResponse.java 1.0
+ * @(#) SendDataOrderModel.java 1.0
  *
  * Copyright 2022 ATH, Inc. Todos los derechos reservados.
  */
@@ -18,34 +18,26 @@ import lombok.NoArgsConstructor;
  * @autor Rafael Chica
  * @Fecha: --o--
  */
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserDataModel {
-
+public class SendDataOrderModel {
     @JsonProperty("id")
     public Long id;
 
-    @JsonProperty("username")
-    public String username;
+    @JsonProperty("petId")
+    public Integer petId;
 
-    @JsonProperty("firstName")
-    public String firstName;
+    @JsonProperty("quantity")
+    public Integer quantity;
 
-    @JsonProperty("lastName")
-    public String lastName;
+    @JsonProperty("shipDate")
+    public String shipDate;
 
-    @JsonProperty("email")
-    public String email;
+    @JsonProperty("status")
+    public String status;
 
-    @JsonProperty("password")
-    public String password;
-
-    @JsonProperty("phone")
-    public String phone;
-
-    @JsonProperty("userStatus")
-    public Integer userStatus;
+    @JsonProperty("complete")
+    public Boolean complete;
 }

@@ -1,4 +1,4 @@
-package constants;
+package io.swagger.petstore.constants;
 /*
  * @(#) Contants.java 1.0
  *

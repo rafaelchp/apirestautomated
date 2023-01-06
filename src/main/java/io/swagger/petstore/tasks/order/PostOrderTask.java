@@ -1,4 +1,4 @@
-package tasks.order;
+package io.swagger.petstore.tasks.order;
 /*
  * @(#) PostOrderTask.java 1.0
  *
@@ -10,7 +10,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Post;
-import tasks.user.PostUserTask;
+import io.swagger.petstore.tasks.user.PostUserTask;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 

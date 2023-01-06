@@ -1,10 +1,11 @@
-package questions;
+package io.swagger.petstore.questions.order;
 /*
- * @(#) ResponseCode.java 1.0
+ * @(#) PostOrderQuestion.java 1.0
  *
  * Copyright 2022 ATH, Inc. Todos los derechos reservados.
  */
 
+import io.swagger.petstore.models.orders.SendDataOrderModel;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
@@ -16,13 +17,9 @@ import net.serenitybdd.screenplay.Question;
  * @autor Rafael Chica
  * @Fecha: --o--
  */
-public class ResponseCode implements Question {
-
-    public static Question<Integer> was(){
-        return new ResponseCode();
-    }
+public class PostOrderQuestion implements Question<SendDataOrderModel> {
     @Override
-    public Integer answeredBy(Actor actor) {
-        return SerenityRest.lastResponse().statusCode();
+    public SendDataOrderModel answeredBy(Actor actor) {
+        return SerenityRest.lastResponse().as(SendDataOrderModel.class);
     }
 }

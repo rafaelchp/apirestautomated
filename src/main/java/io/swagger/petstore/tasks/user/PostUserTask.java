@@ -1,4 +1,4 @@
-package tasks.user;
+package io.swagger.petstore.tasks.user;
 /*
  * @(#) PostUser.java 1.0
  *

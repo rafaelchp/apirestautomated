@@ -6,15 +6,15 @@
  */
 
 
-import models.users.UserDataModel;
+import io.swagger.petstore.models.users.UserDataModel;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import questions.user.GetUserQuestion;
-import questions.ResponseCode;
-import tasks.user.GetUser;
+import io.swagger.petstore.questions.user.GetUserQuestion;
+import io.swagger.petstore.questions.ResponseCode;
+import io.swagger.petstore.tasks.user.GetUser;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;

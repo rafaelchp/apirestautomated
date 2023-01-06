@@ -1,11 +1,11 @@
-package questions.order;
+package io.swagger.petstore.questions.order;
 /*
  * @(#) ResponseObjectOrder.java 1.0
  *
  * Copyright 2022 ATH, Inc. Todos los derechos reservados.
  */
 
-import models.orders.SendDataOrderModel;
+import io.swagger.petstore.models.orders.SendDataOrderModel;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
